@@ -20,7 +20,7 @@ public class Environment {
 
     static {
         Properties properties = null;
-        String environment = ConfigurationReader.getProperty("environment");
+        String environment = ConfigurationReader.getProperty("src/test/resources1/environment");
         try {
             //https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
             String path = System.getProperty("user.dir") + String.format("/src/test/resources/environment/%s.properties", environment);
